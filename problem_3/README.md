@@ -398,3 +398,8 @@ primes(100)
 You can improve even more the jit compilation by adding some `Compilation Options` (see [numba documentation](https://numba.readthedocs.io/en/stable/user/jit.html)).
 
 ---
+
+### Multiprocessing
+
+The final suggestion is to create separate processes to solve the problem. In the `primes` function, for example, the function process N different numbers, and for each number the same process of verify if the specific number is prime or not is executed. This verification is completely uncorrelated between the numbers, so each verification can be made in one different process.
+
