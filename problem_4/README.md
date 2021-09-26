@@ -19,3 +19,11 @@ Provide a commented solution (in a language of your choice).
 In the [cavity_flow](cavity_flow.ipynb) notebook you can find a simple solution for this problem. Please be aware that the algorithm in this notebook is written simply for comprehension purposes. The implemented code returns the following result:
 
 <p align='center'> <img src="flow.png" alt="Cavity" height="300" id="cavity"> </p>
+
+## Background
+
+The flow pattern of a fluid can be obtained through velocity vectors at every point in space. However, the representation in terms of several vectors is complicated. An alternative is to use streamlines to represent the flow, where the streamline is a tangential curve to the velocity vector of the flow.
+
+For a two-dimensional inviscid and incompressible flow in the given S region, the stream function satisfies:
+
+<p align='center'> <img src="https://latex.codecogs.com/svg.image?\nabla^{2}&space;\Psi&space;=&space;\frac{\partial^{2}\Psi}{\partial&space;x^{2}}&space;&plus;&space;\frac{\partial^{2}\Psi}{\partial&space;y^{2}}&space;=&space;0&space;\text{&space;in&space;S}" title="\nabla^{2} \Psi = \frac{\partial^{2}\Psi}{\partial x^{2}} + \frac{\partial^{2}\Psi}{\partial y^{2}} = 0 \text{ in S}" /> </p>
