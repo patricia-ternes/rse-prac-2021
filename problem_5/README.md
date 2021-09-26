@@ -28,3 +28,12 @@ In the script fragment above:
 
 1. Can you determine the content of the `fname_out` variable?
 2. What information is missing?
+
+## Solution
+
+The `fname_out` is a string `variable`. This variable is used to set a name for the figure created in the last code line. It is not possible to completely define the string that this variable returns, since two variables have not been defined:
+
+- `simhour`
+- `Home`
+
+We can however estimate a generic format taking into account some parts of the code.
