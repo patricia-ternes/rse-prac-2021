@@ -363,3 +363,38 @@ To use the `numba` module it is necessary to follow the steps:
 2. add a `@jit` decorator before every function that you want to compile
 3. command prompt: normally run the Python file
 
+For the `pyscript.py` code, following the step 1 and 2, the updated code is (see first and third line):
+
+```python
+from numba import jit
+
+@jit
+def primes(n):
+    if n==2:
+        return [2]
+    elif n<2:
+        return []
+
+    s=[i for i in range(3,n+1,2)]  # I updated this line to avoid an error of undefined list type
+    mroot = n ** 0.5
+    half=(n+1)//2-1
+    i=0
+    m=3
+
+    while m <= mroot:
+        if s[i]:
+            j=(m*m-3)//2
+            s[j]=0
+            while j<half:
+                s[j]=0
+                j+=m
+        i=i+1
+        m=2*i+3
+    return [2]+[x for x in s if x]
+
+primes(100)
+```
+
+You can improve even more the jit compilation by adding some `Compilation Options` (see [numba documentation](https://numba.readthedocs.io/en/stable/user/jit.html)).
+
+---
