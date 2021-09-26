@@ -43,3 +43,9 @@ As the data involve real individuals, special attention must be given to ethical
 
 These questions would help to identify the requirements for the output.
 
+> About the project stakeholders:
+
+- Who are involved in the project?
+- If there are other project stakeholders, do they have the same needs/ideas?
+
+Each person involved in the project may have a different need, so it is necessary to check with each one what they need. For example, in an academic environment, the PI usually has a more global view of the project, while other participants have a more specific view.
