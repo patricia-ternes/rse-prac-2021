@@ -237,3 +237,13 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 
 ```
 
+According to the `line_profiler` [documentation](https://github.com/rkern/line_profiler), the output headers have the following meaning:
+
+- *Timer unit: conversion factor to seconds.*
+- *Line #: The line number in the file.*
+- *Hits: The number of times that line was executed.*
+- *Time: The total amount of time spent executing the line in the timer's units.*
+- *Per Hit: The average amount of time spent executing the line once in the timer's units.*
+- *% Time: The percentage of time spent on that line relative to the total amount of recorded time spent in the function.*
+- *Line Contents: The actual source code.*
+  
