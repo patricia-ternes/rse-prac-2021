@@ -330,3 +330,24 @@ Line #    Mem usage    Increment  Occurences   Line Contents
     22   41.762 MiB    0.000 MiB           4           m=2*i+3
     23   41.762 MiB    0.000 MiB          52       return [2]+[x for x in s if x]
 ```
+
+The `memory-profiler` module also has a nice visualization tool that can be used by typing in the command prompt:
+
+```bash
+mprof run file.py
+```
+
+and then:
+
+```bash
+mprof plot
+```
+
+For the `pyscript.py` file the output visualization is:
+
+![memory-plot](Figure_1.png)
+
+This method is very useful to avoid reaching memory limits.
+
+---
+
