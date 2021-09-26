@@ -44,3 +44,8 @@ As streamline is a tangential curve to the velocity vector, so, in each point of
 
 <p align='center'>  <img src="https://latex.codecogs.com/svg.image?\begin{matrix}u_{x}&space;=&space;\frac{\partial&space;\Psi}{\partial&space;y}&space;&space;=&space;\frac{1}{2}&space;\left(&space;\Psi_{i,j&plus;1}&space;-&space;\Psi_{i,j-1}&space;\right)\\&space;\&space;\\u_{y}&space;=&space;-\frac{\partial&space;\Psi}{\partial&space;x}&space;&space;=&space;\frac{1}{2}&space;\left(&space;\Psi_{i&plus;1,j}&space;-&space;\Psi_{i-1,j}&space;\right)\end{matrix}&space;" title="\begin{matrix}u_{x} = \frac{\partial \Psi}{\partial y} = \frac{1}{2} \left( \Psi_{i,j+1} - \Psi_{i,j-1} \right)\\ \ \\u_{y} = -\frac{\partial \Psi}{\partial x} = \frac{1}{2} \left( \Psi_{i+1,j} - \Psi_{i-1,j} \right)\end{matrix} " /></p>
 
+## Algorithm outline
+
+The image bellow shows an algorithm outline to solve the cavity flow problem presented above.
+
+<p align='center'> <img src="outline.png" alt="Cavity" height="600" id="cavity"> </p>
