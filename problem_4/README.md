@@ -14,3 +14,8 @@ Provide a commented solution (in a language of your choice).
 
 **Please provide both your code and your explanations in the response to this problem.**
 
+## Solution
+
+In the [cavity_flow](cavity_flow.ipynb) notebook you can find a simple solution for this problem. Please be aware that the algorithm in this notebook is written simply for comprehension purposes. The implemented code returns the following result:
+
+<p align='center'> <img src="flow.png" alt="Cavity" height="300" id="cavity"> </p>
