@@ -142,3 +142,11 @@ for a list comprehension:
 ```python
 x = [i for i in range(100) if i%2 == 0]
 ```
+
+#### If-else ladder
+
+> Put high probability if-statements first!
+
+Putting low probability if-statements early will make your code perform more operations than necessary.
+
+---
