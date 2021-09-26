@@ -90,3 +90,29 @@ y = 2
 z = 3
 ```
 
+#### Library function and dot operation
+
+> Library functions are designed to be as efficient as possible.
+
+Instead of writing your own functions, whenever possible use functions from existing libraries. Also, when using a library function, avoid using the dot operation. The following code:
+
+
+```python
+from math import sqrt
+
+x = sqrt(4)
+```
+
+is more efficient than the code with dot operation:
+
+```python
+import math
+
+x = math.sqrt(4)
+```
+
+that is more efficient than the code with a homemade function:
+
+```python
+x = 4 ** 0.5
+```
