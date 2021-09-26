@@ -62,3 +62,42 @@ The output:
 ```
 
 The researcher must manually go through the list and check which file does not have 100 words. This solution is simple to apply, but it requires a manual analysis that, depending on the number of files, can become an impractical task.
+
+### Using the `awk` command
+
+The `awk` command (abbreviation for Aho, Weinberger and Kernighan - original authors' names) is a complete text manipulation toolkit. You can find [here](https://www.gnu.org/software/gawk/manual/gawk.html) a complete guide for the `awk` command.
+
+For instance, we are interested in obtaining the name of files that have less than 100 columns. So, lets start with a command that will return the number of columns for the file `value1`:
+
+```bash
+awk '{print NF, FILENAME}' values1
+```
+
+where:
+
+* `NF`: [Built-In variable] count of the number of fields (columns)
+* `FILENAME`: [Built-In variable] name of the file
+
+The output will be:
+
+```bash
+100 values1
+```
+
+We can add an `if statement` to print the output only in cases where the file has less than 100 columns. The following command would not return any value, since as seen above, the values1 file has 100 columns.
+
+``` bash
+awk '{ if (NF < 100) print NF, FILENAME}' values1
+```
+
+Finally, we can use a loop to go through all the desired files. The final command is:
+
+``` bash
+for f in values*; do    awk '{ if (NF < 100) print NF, FILENAME}' $f; done
+```
+
+For this problem, the output is:
+
+```bash
+99 values44
+```
