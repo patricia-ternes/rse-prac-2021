@@ -55,3 +55,12 @@ The `str("%04d"%)` convert the `simhour` variable in a string with at least four
 | 123  | integer | 0123 | string |
 | 1234 | integer | 1234 | string |
 
+### `Home` generic estimation
+
+The `Home` appears the first time in following piece of the code:
+
+```python
+fname_out = Home+MetaData+".png"
+```
+
+The `Home` is being directly concatenated with two other string variables, therefore the `Home` should be assigned as a string variable. Assuming the variable stores the location where the figure will be saved, a possible example for the `Home` variable is: `'/home/User/Documents/Figures/'`.
