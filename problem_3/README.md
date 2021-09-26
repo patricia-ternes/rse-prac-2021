@@ -96,7 +96,6 @@ z = 3
 
 Instead of writing your own functions, whenever possible use functions from existing libraries. Also, when using a library function, avoid using the dot operation. The following code:
 
-
 ```python
 from math import sqrt
 
@@ -115,4 +114,31 @@ that is more efficient than the code with a homemade function:
 
 ```python
 x = 4 ** 0.5
+```
+
+#### List comprehension
+
+> List comprehension is a very concise syntax to create a new list
+
+Create lists using *list comprehension* whenever possible. List comprehension can be used over:
+
+- loops
+- lambda function
+- map()
+- filter()
+- reduce()
+
+For example, to create a list of even numbers, you can change the following code:
+
+```python
+x = []
+for i in range(100):
+    if i%2 == 0:
+      x.append(i)
+```
+
+for a list comprehension:
+
+```python
+x = [i for i in range(100) if i%2 == 0]
 ```
