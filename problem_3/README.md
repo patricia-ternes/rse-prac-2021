@@ -67,3 +67,26 @@ The latest version should have the best performance, so make sure you always use
 Python has some built-in data structures (namely: list, tuple, set, and dictionary). It is also possible to use additional data structures by importing modules (like [NumPy array](https://numpy.org/doc/stable/reference/generated/numpy.array.html) and [pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)).
 
 One of the most common mistakes is using the **list** structure for all cases. For example, if your list has elements of a single type (like real numbers), you might consider using a NumPy array to optimise the code.
+
+#### Assign variables
+
+> Avoid assign variables inside loops.
+
+Variables assigned within loops are recreated whenever the loop is iterated.
+
+> Multiple assignments
+
+If there is more than one variable to assign, you can perform a multiple assignment. The code:
+
+```python
+x, y, z = 1, 2, 3
+```
+
+is more efficient than
+
+```python
+x = 1
+y = 2
+z = 3
+```
+
