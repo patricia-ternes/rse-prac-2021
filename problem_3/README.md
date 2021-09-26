@@ -403,3 +403,33 @@ You can improve even more the jit compilation by adding some `Compilation Option
 
 The final suggestion is to create separate processes to solve the problem. In the `primes` function, for example, the function process N different numbers, and for each number the same process of verify if the specific number is prime or not is executed. This verification is completely uncorrelated between the numbers, so each verification can be made in one different process.
 
+To do this, the first step is to define one function just to verify if one number is a prime or not. For simplicity, I am going to use a library function. The new function can be something like:
+
+```python
+from sympy import isprime  # need to install sympy
+
+def prime(i):
+    if (isprime(i)):
+        return(i)
+```
+
+To run several process in parallel, we can use the `multiprocessing` module. The basic command is:
+
+```python
+from multiprocessing import Pool
+
+pool = Pool(processes=NC)  # Replace NC by the number of simultaneous processes - usually the number of cores.
+pool.map(function, inputs)
+```
+
+For the primes problem the `multiprocessing` can be used as follow:
+
+```python
+from multiprocessing import Pool
+
+N = 100
+input_numbers = [i for i in range(N)]
+pool = Pool(processes=8)
+x = pool.map(prime, input_numbers)
+y = [i for i in x if i!=None]
+```
