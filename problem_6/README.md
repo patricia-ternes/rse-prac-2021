@@ -49,3 +49,9 @@ These questions would help to identify the requirements for the output.
 - If there are other project stakeholders, do they have the same needs/ideas?
 
 Each person involved in the project may have a different need, so it is necessary to check with each one what they need. For example, in an academic environment, the PI usually has a more global view of the project, while other participants have a more specific view.
+
+### After the requirements elicitation
+
+The above questions are necessary to define the researcher's real aim (requirements) and how much of this it is possible to fulfil. Most of these questions can be answered directly by the researcher (or other participants), but some are technical and require further investigation.
+
+After complete the requirements elicitation, the collected information need to be organised in a document and further investigate by me and by project stakeholders (to guarantee that their needs will be met through the proposed plan). My approach in this point should be define what is feasible (and how) and what is priority. At this point I would also thoroughly analyse the requirements. If any requirement has a problem (is incomplete, unclear, ambiguous, etc.), it must be identified and corrected. As the project involves data collection, perhaps a good approach would be to create a Data Flow Diagram to visualize all the data variables and the correlation between them.
