@@ -77,7 +77,7 @@ The iteration number  used in the example is arbitrary. You can implement a conv
 
 > Array and indexing
 
-Although the code base uses numpy arrays, most operations are performed using loops that do not increase code performance much compared to using lists. Can you use some indexing solutions? 
+Although the code base uses numpy arrays, most operations are performed using loops that do not increase code performance much compared to using lists. Can you use some indexing solutions?
 
 > Decomposition
 
