@@ -198,3 +198,42 @@ Then go to the command prompt and type:
 ```bash
 kernprof -l -v pyscript.py
 ```
+
+The output will be
+
+```bash
+Wrote profile results to pyscript.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 4.9e-05 s
+File: pyscript.py
+Function: primes at line 1
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     1                                           @profile
+     2                                           def primes(n):
+     3         1          2.0      2.0      4.1      if n==2:
+     4                                                   return [2]
+     5         1          0.0      0.0      0.0      elif n<2:
+     6                                                   return []
+     7                                           
+     8         1          2.0      2.0      4.1      s=list(range(3,n+1,2))
+     9         1          3.0      3.0      6.1      mroot = n ** 0.5
+    10         1          0.0      0.0      0.0      half=(n+1)//2-1
+    11         1          0.0      0.0      0.0      i=0
+    12         1          0.0      0.0      0.0      m=3
+    13                                           
+    14         5          3.0      0.6      6.1      while m <= mroot:
+    15         4          2.0      0.5      4.1          if s[i]:
+    16         3          1.0      0.3      2.0              j=(m*m-3)//2
+    17         3          1.0      0.3      2.0              s[j]=0
+    18        31          9.0      0.3     18.4              while j<half:
+    19        28          9.0      0.3     18.4                  s[j]=0
+    20        28         10.0      0.4     20.4                  j+=m
+    21         4          1.0      0.2      2.0          i=i+1
+    22         4          1.0      0.2      2.0          m=2*i+3
+    23         1          5.0      5.0     10.2      return [2]+[x for x in s if x]
+
+```
+
