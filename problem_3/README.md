@@ -32,3 +32,14 @@ A researcher has approached you with a piece of Python code which seems to be ru
 She doesn’t want you to fix the code, but would like you to explain some general principles she can apply herself to investigate the code and work out where the problems are.
 
 What would you suggest?
+
+## Solution
+
+> To speed up any Python code four steps can be followed:
+
+1. Before moving on to more advanced techniques, it is recommended to review the code, following a series of good practices. Some tips from these best practices (which lead to better code performance) are listed in the [General tips](#general-tips) session.
+2. Once you have ensured that your code is *well written*, it is recommended to profile your code (see [CPU profiling](#cpu-profiling) and [Memory profiling](#memory-profiling) sessions).
+3. It is possible to translate the Python function to an optimized code (see [Native-speed code](#native-speed-code) session).
+4. Finally, it is possible to separate the running process in several processes to be run in parallel (see [Multiprocessing](#multiprocessing)).
+
+---
