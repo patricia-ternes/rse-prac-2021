@@ -49,3 +49,39 @@ As streamline is a tangential curve to the velocity vector, so, in each point of
 The image bellow shows an algorithm outline to solve the cavity flow problem presented above.
 
 <p align='center'> <img src="outline.png" alt="Cavity" height="600" id="cavity"> </p>
+
+## Further investigation
+
+The simplified solution gives students an opportunity to become familiar with basic concepts of both fluid dynamics and computer modelling. Furthermore, the algorithm offers several exploratory paths both from a computational and physical point of view. Below I leave suggestions for additional investigations that can be explored.
+
+For all suggestions presented bellow you can use the provided code as baseline result.
+
+- hint: the `time` module can help in the benchmarking process.
+
+> Functions and generalization
+
+The code can be organized in functions, improving the readability and the usage.
+
+> Changing the grid
+
+In the available implementation the grid was tied to the size of the simulation box.
+
+- Can you generalize the code to allow test with different grid size?
+- What is the implication of using a larger grid?
+  - From a computational point of view;
+  - From a fluid dynamic point of view;
+
+> Convergence and the number of iterations
+
+The iteration number  used in the example is arbitrary. You can implement a convergence rule/verification to guarantee that the code will not run steps unnecessarily, nor will it end before the fluid reaches equilibrium.
+
+> Array and indexing
+
+Although the code base uses numpy arrays, most operations are performed using loops that do not increase code performance much compared to using lists. Can you use some indexing solutions? 
+
+> Decomposition
+
+This problem is ideal to test the `regular domain decomposition` which would allow to solve the problem in parallel.
+
+- Can you break up each two-dimensional grid cell into smaller grids?
+- How to process the overlapping boundary layer (communication)?
