@@ -247,3 +247,33 @@ According to the `line_profiler` [documentation](https://github.com/rkern/line_p
 - *% Time: The percentage of time spent on that line relative to the total amount of recorded time spent in the function.*
 - *Line Contents: The actual source code.*
   
+Comparing the row values in the `% Time` column it is possible to note some things:
+
+1. the `mroot` variable is consuming a large amount of time for a single line operation.
+2. the nested while-statement is consuming most part of the running time: just to create a list of zeros!
+
+From here it is an iterative process. Try to propose *cheaper* solutions for slow code parts identified through profiling, and then rerun `line_profiler`. Compare the results to decide which approach was most effective.
+
+For example, the nested while statement
+
+```python
+while j<half:
+    s[j]=0
+    j+=m
+```
+
+could be replaced by a for statement over a vector of zeros
+
+```python
+for k in range(j, half, m):
+  s[k]=0
+```
+
+or could be even further improved using an indexing solution:
+
+```python
+k = np.arange(j, half, m)
+s[k] = 0
+```
+
+---
