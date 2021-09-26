@@ -76,3 +76,10 @@ or in one line
 ``` bash
 for f in *.csv; do     mv -- "$f" "${f%.csv}.dat"; done
 ```
+
+## Additional solutions
+
+If the problem involves more *complex* filenames, then a different solution may be necessary. I cite here two options:
+
+1. Using the `sed` (see more about [here](https://www.gnu.org/software/sed/manual/sed.html))
+2. Using  Perl `rename` (see more about [here](https://perldoc.perl.org/functions/rename))
