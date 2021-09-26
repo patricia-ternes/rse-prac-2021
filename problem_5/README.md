@@ -37,3 +37,21 @@ The `fname_out` is a string `variable`. This variable is used to set a name for 
 - `Home`
 
 We can however estimate a generic format taking into account some parts of the code.
+
+### `simhour` generic estimation
+
+The `simhour` appears the first time in following piece of the code:
+
+```python
+Frame = str("%04d"%simhour)
+```
+
+The `str("%04d"%)` convert the `simhour` variable in a string with at least four integer number. Therefore, the `simhour` should be assigned as a number (real or integer). Some examples for the `simhour` and `Frame` variables:
+
+|`simhour` value |`simhour` type |`Frame` value | `Frame` type |
+| :--: | :--:    | :--: | :--:   |
+| 1    | integer | 0001 | string |
+| 1.9  | real    | 0001 | string |
+| 123  | integer | 0123 | string |
+| 1234 | integer | 1234 | string |
+
