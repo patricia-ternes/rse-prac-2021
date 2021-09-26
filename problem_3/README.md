@@ -54,17 +54,3 @@ Quickly looking at the code three things catch my immediate attention:
 
 These two practices, for example, are not ideal and can slow down your code. So, before moving on to more advanced techniques, it is necessary to ensure that the code is written in the best possible way. Below, some practices considered ideal will be presented.
 
-- [Problem 3](#problem-3)
-  - [Solution](#solution)
-    - [General tips](#general-tips)
-      - [Python version](#python-version)
-      - [Data structure](#data-structure)
-      - [Assign variables](#assign-variables)
-      - [Library function and dot operation](#library-function-and-dot-operation)
-      - [List comprehension](#list-comprehension)
-      - [If-else ladder](#if-else-ladder)
-    - [CPU profiling](#cpu-profiling)
-    - [Memory profiling](#memory-profiling)
-    - [Native-speed code](#native-speed-code)
-    - [Multiprocessing](#multiprocessing)
-    - [Comentario do Evy](#comentario-do-evy)
