@@ -59,3 +59,11 @@ These two practices, for example, are not ideal and can slow down your code. So,
 > Every release is more optimized.
 
 The latest version should have the best performance, so make sure you always use the latest version. At least choose Python 3 over Python 2.
+
+#### Data structure
+
+> Using the most appropriate data structure is critical to speed up the code.
+
+Python has some built-in data structures (namely: list, tuple, set, and dictionary). It is also possible to use additional data structures by importing modules (like [NumPy array](https://numpy.org/doc/stable/reference/generated/numpy.array.html) and [pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)).
+
+One of the most common mistakes is using the **list** structure for all cases. For example, if your list has elements of a single type (like real numbers), you might consider using a NumPy array to optimise the code.
