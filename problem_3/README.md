@@ -351,3 +351,15 @@ This method is very useful to avoid reaching memory limits.
 
 ---
 
+### Native-speed code
+
+Python is an interpreted code which is one of the main causes of Python's performance not being as good as code written in C (which is compiled), for example. This is also one of the reasons library functions perform better than homemade functions, since normally library functions are C-based. A natural way then is to turn the Python code into a compiled code. For that there are some options, and here we will present [Numba](http://numba.pydata.org/).
+
+Numba compiles parts of a Python code using a process named Just In Time compilation (jit). This process is simple and fast.
+
+To use the `numba` module it is necessary to follow the steps:
+
+1. import the numba jit decorator
+2. add a `@jit` decorator before every function that you want to compile
+3. command prompt: normally run the Python file
+
