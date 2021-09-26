@@ -29,3 +29,17 @@ These questions would help pre-select a group of tools to solve the problem.
 
 As the data involve real individuals, special attention must be given to ethical factors. These questions seek to elucidate both the ethical factor and provide an understanding of what the researcher is looking for. Furthermore, it is important to understand what the researcher is looking for so as not to collect data that will not be necessary for the research.
 
+> About the data storage:
+
+- How should collected information be organised and stored? What is the preferred output format?
+- Facebook and Twitter data are going to be stored in the same file?
+- How to deal with same users data from both platforms?
+- Will the collected data need to be processed? Although data processing is a later process, it may be necessary to ensure the anonymity of users (which requires some initial processing).
+  - will users be anonymized?
+  - a unique user identifier must be generated?
+  - should any variables be separated into categories (age bands, for example)?
+  - should any variable be unified with another (age and sex, for example)?
+- If the data is not anonymized, are there any special requirements for data storage?
+
+These questions would help to identify the requirements for the output.
+
