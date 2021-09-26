@@ -6,7 +6,7 @@ Your colleague wants to demonstrate a number of principles, including finite dif
 
 They would like a coding exercise to determine the flow pattern of a fluid in a cavity. For simplicity, the liquid is assumed to have zero viscosity which implies that there can be no vortices (i.e. no whirlpools) in the flow. The cavity is a square box with an inlet on one side and an outlet on another as shown below.
 
-<p align='center'> <img src="cavity.png" alt="Cavity" height="250" id="cavity"> </p>
+<p align='center'> <img src="input/cavity.png" alt="Cavity" height="250" id="cavity"> </p>
 
 Describe how you would go about creating a programming exercise to solve this problem, the design decisions and assumptions that you need to let the undergraduates know about, and how you would test a solution. They may also need some pointers and reminders of the underpinning theory.
 
@@ -18,7 +18,7 @@ Provide a commented solution (in a language of your choice).
 
 In the [cavity_flow](cavity_flow.ipynb) notebook you can find a simple solution for this problem. Please be aware that the algorithm in this notebook is written simply for comprehension purposes. The implemented code returns the following result:
 
-<p align='center'> <img src="flow.png" alt="Cavity" height="300" id="cavity"> </p>
+<p align='center'> <img src="input/flow.png" alt="Flow" height="300" id="flow"> </p>
 
 ## Background
 
@@ -30,7 +30,7 @@ For a two-dimensional inviscid and incompressible flow in the given S region, th
 
 There are different approaches to find the stream function that satisfies the above equation. For instance, the stream function is going to be calculated using a finite difference approach. In this approach the simulation box is divided in a grid with *m* rows and *n* columns and the stream function is determined for each grid point by averaging the stream function value of the nearest neighbours. For example, a square lattice grid with 5 rows and 5 lines is represented bellow (in red are highlighted the nearest neighbours for the blue grid):
 
-<p align='center'> <img src="grid.png" alt="Grid" height="150" id="grid"> </p>
+<p align='center'> <img src="input/grid.png" alt="Grid" height="150" id="grid"> </p>
 
 Therefore, the stream function value in the grid 3,3 is:
 
@@ -48,7 +48,7 @@ As streamline is a tangential curve to the velocity vector, so, in each point of
 
 The image bellow shows an algorithm outline to solve the cavity flow problem presented above.
 
-<p align='center'> <img src="outline.png" alt="Cavity" height="600" id="cavity"> </p>
+<p align='center'> <img src="input/outline.png" alt="Algorithm outline" height="600" id="outline"> </p>
 
 ## Further investigation
 
