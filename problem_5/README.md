@@ -64,3 +64,15 @@ fname_out = Home+MetaData+".png"
 ```
 
 The `Home` is being directly concatenated with two other string variables, therefore the `Home` should be assigned as a string variable. Assuming the variable stores the location where the figure will be saved, a possible example for the `Home` variable is: `'/home/User/Documents/Figures/'`.
+
+### `fname_out` generic estimation
+
+Giving arbitrary values for the two missing variables, we can see the final format of the content stored in the variable. Considering:
+
+- `simhour` = 1
+- `Home` = `'/home/User/Documents/Figures/'`
+
+the content of the `fname_out` variable will be:
+```bash
+/home/User/Documents/Figures/Ozone_2001-01-01_0001.png
+```
