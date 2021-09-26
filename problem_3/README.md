@@ -54,3 +54,8 @@ Quickly looking at the code three things catch my immediate attention:
 
 These two practices, for example, are not ideal and can slow down your code. So, before moving on to more advanced techniques, it is necessary to ensure that the code is written in the best possible way. Below, some practices considered ideal will be presented.
 
+#### Python version
+
+> Every release is more optimized.
+
+The latest version should have the best performance, so make sure you always use the latest version. At least choose Python 3 over Python 2.
