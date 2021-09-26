@@ -159,3 +159,42 @@ There are different approaches to profiling the code, here I will suggest one th
 
 - `pip install line_profiler`
 - `conda install line_profiler` (for Anaconda Python)
+
+To use the `line_profiler` module it is necessary to follow two steps:
+
+1. add a `@profile` decorator
+2. command prompt: `kernprof -l -v file.py`
+
+```python
+@profile
+def primes(n):
+    if n==2:
+        return [2]
+    elif n<2:
+        return []
+
+    s=list(range(3,n+1,2))  # I updated this line for Python 3 syntax
+    mroot = n ** 0.5
+    half=(n+1)//2-1
+    i=0
+    m=3
+
+    while m <= mroot:
+        if s[i]:
+            j=(m*m-3)//2  # I updated this line for Python 3 syntax
+            s[j]=0
+            while j<half:
+                s[j]=0
+                j+=m
+        i=i+1
+        m=2*i+3
+    return [2]+[x for x in s if x]
+
+primes(100)
+```
+
+Then go to the command prompt and type:
+
+```bash
+kernprof -l -v pyscript.py
+```
