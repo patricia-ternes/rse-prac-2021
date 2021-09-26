@@ -39,3 +39,8 @@ Therefore, the stream function value in the grid 3,3 is:
 Generalising, the value for the stream function in each grid (*i,j*) can be calculated by
 
 <p align='center'> <img src="https://latex.codecogs.com/svg.image?\Psi_{i,j}&space;=&space;\frac{1}{4}&space;\left&space;(&space;\Psi_{i-1,j}&space;&plus;&space;\Psi_{i&plus;1,3}&space;&plus;&space;\Psi_{i,j-1}&space;&plus;&space;\Psi_{i,j&plus;1}\right&space;)" title="\Psi_{i,j} = \frac{1}{4} \left ( \Psi_{i-1,j} + \Psi_{i+1,3} + \Psi_{i,j-1} + \Psi_{i,j+1}\right )" /> </p>
+
+As streamline is a tangential curve to the velocity vector, so, in each point of the grid is possible to determine the velocity components by
+
+<p align='center'>  <img src="https://latex.codecogs.com/svg.image?\begin{matrix}u_{x}&space;=&space;\frac{\partial&space;\Psi}{\partial&space;y}&space;&space;=&space;\frac{1}{2}&space;\left(&space;\Psi_{i,j&plus;1}&space;-&space;\Psi_{i,j-1}&space;\right)\\&space;\&space;\\u_{y}&space;=&space;-\frac{\partial&space;\Psi}{\partial&space;x}&space;&space;=&space;\frac{1}{2}&space;\left(&space;\Psi_{i&plus;1,j}&space;-&space;\Psi_{i-1,j}&space;\right)\end{matrix}&space;" title="\begin{matrix}u_{x} = \frac{\partial \Psi}{\partial y} = \frac{1}{2} \left( \Psi_{i,j+1} - \Psi_{i,j-1} \right)\\ \ \\u_{y} = -\frac{\partial \Psi}{\partial x} = \frac{1}{2} \left( \Psi_{i+1,j} - \Psi_{i-1,j} \right)\end{matrix} " /></p>
+
