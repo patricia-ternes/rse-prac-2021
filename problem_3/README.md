@@ -43,3 +43,28 @@ What would you suggest?
 4. Finally, it is possible to separate the running process in several processes to be run in parallel (see [Multiprocessing](#multiprocessing)).
 
 ---
+
+### General tips
+
+Quickly looking at the code three things catch my immediate attention:
+
+1. Lines 7 (`s=range(3,n+1,2)`), 15 (`j=(m*m-3)/2`) and 16 (`s[j]=0`) indicates that the code was written in Python 2.
+2. Line 7 (`s=range(3,n+1,2)`) assign a integer list to `s` instead an array.
+3. Line 8 (`mroot = n ** 0.5`) is a homemade function that has an equivalent library function available.
+
+These two practices, for example, are not ideal and can slow down your code. So, before moving on to more advanced techniques, it is necessary to ensure that the code is written in the best possible way. Below, some practices considered ideal will be presented.
+
+- [Problem 3](#problem-3)
+  - [Solution](#solution)
+    - [General tips](#general-tips)
+      - [Python version](#python-version)
+      - [Data structure](#data-structure)
+      - [Assign variables](#assign-variables)
+      - [Library function and dot operation](#library-function-and-dot-operation)
+      - [List comprehension](#list-comprehension)
+      - [If-else ladder](#if-else-ladder)
+    - [CPU profiling](#cpu-profiling)
+    - [Memory profiling](#memory-profiling)
+    - [Native-speed code](#native-speed-code)
+    - [Multiprocessing](#multiprocessing)
+    - [Comentario do Evy](#comentario-do-evy)
