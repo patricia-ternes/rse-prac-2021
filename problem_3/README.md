@@ -290,3 +290,13 @@ The `memory-profiler` module depends on the `psutil` module that can be installe
 - `pip install psutil`
 - `conda install psutil` (for Anaconda Python)
 
+To use the `memory_profiler` module it is necessary to follow two steps:
+
+1. add a `@profile` decorator (similar to the `line_profiler` module)
+2. command prompt: `python -m memory_profiler file.py`
+
+For the `pyscript.py` file go to the command prompt and type:
+
+```bash
+python -m memory_profiler pyscript.py
+```
