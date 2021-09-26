@@ -150,3 +150,12 @@ x = [i for i in range(100) if i%2 == 0]
 Putting low probability if-statements early will make your code perform more operations than necessary.
 
 ---
+
+### CPU profiling
+
+Once the code is performing the desired task and has been written following best practices, the next step  is profiling the code to find possible bottlenecks. By profiling your code you can identify what part demands more execution time and focus your attention in this part.
+
+There are different approaches to profiling the code, here I will suggest one that is easy to install/use, while producing meaningful results: the `line_profiler` module. It can be installed through command prompt typing either:
+
+- `pip install line_profiler`
+- `conda install line_profiler` (for Anaconda Python)
