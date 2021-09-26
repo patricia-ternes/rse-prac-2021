@@ -277,3 +277,16 @@ s[k] = 0
 ```
 
 ---
+
+### Memory profiling
+
+The memory profiling follows an approach similar to the one discussed above. To this task the `memory-profiler` module will be used (see [here](https://pypi.org/project/memory-profiler/) more information). It can be installed through command prompt typing either:
+
+- `pip install memory_profiler`
+- `conda install memory_profiler` (for Anaconda Python)
+
+The `memory-profiler` module depends on the `psutil` module that can be installed through command prompt typing either:
+
+- `pip install psutil`
+- `conda install psutil` (for Anaconda Python)
+
