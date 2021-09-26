@@ -15,6 +15,6 @@ In this repository you will find my answers for the practical skills test.
 - [Problem 1](problem_1/README.md)
 - [Problem 2](problem_2/README.md)
 - [Problem 3](problem_3/README.md)
-- [Problem 4](problem_4/README.md)
+- [Problem 4](problem_4/README.md) & [Notebook](problem_4/cavity_flow.ipynb)
 - [Problem 5](problem_5/README.md)
 - [Problem 6](problem_6/README.md)
